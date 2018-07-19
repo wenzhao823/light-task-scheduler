@@ -17,8 +17,8 @@ public class RedisTest {
 
     @Before
     public void connectionTest() {
-        jedis = new Jedis("127.0.0.1", 6379);//redis的地址以及连接端口
-        // jedis.auth("helloworld");  //开启密码验证（配置文件中为 requirepass helloworld）的时候需要执行该方法
+        jedis = new Jedis("127.0.0.1", 16379);//redis的地址以及连接端口
+        jedis.auth("QOR9HWYx14C74qK2Einvg9UJ62hf8lLXMemDw7yo");  //开启密码验证（配置文件中为 requirepass helloworld）的时候需要执行该方法
     }
 
     @Test
