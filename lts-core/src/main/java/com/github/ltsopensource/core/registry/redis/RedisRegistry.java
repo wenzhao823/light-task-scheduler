@@ -67,7 +67,7 @@ public class RedisRegistry extends FailbackRegistry {
             String host = addr.substring(0, i);
             int port = Integer.parseInt(addr.substring(i + 1));
             this.jedisPools.put(addr, new JedisPool(redisConfig, host, port,
-                    Constants.DEFAULT_TIMEOUT));
+                    Constants.DEFAULT_TIMEOUT, "QOR9HWYx14C74qK2Einvg9UJ62hf8lLXMemDw7yo"));
         }
 
         this.expirePeriod = config.getParameter(ExtConfig.REDIS_SESSION_TIMEOUT, Constants.DEFAULT_SESSION_TIMEOUT);
